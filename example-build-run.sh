@@ -20,13 +20,13 @@ set -e
 meteor build --server-only --directory $DEPLOY_DIR
 
 ### RUN
-cd $DEPLOY_DIR/bundle/programs/server
-npm install
+#cd $DEPLOY_DIR/bundle/programs/server
+#npm install
 
-cd $DEPLOY_DIR/bundle
-NODE_ENV=production \
-PORT=3000 \
-ROOT_URL=http://localhost:3000 \
-MONGO_URL=mongodb://localhost:27017/rocketchat \
-MONGO_OPLOG_URL=mongodb://localhost:27017/local \
-node main.js
+#cd $DEPLOY_DIR/bundle
+#NODE_ENV=production \
+#PORT=3000 \
+#ROOT_URL=http://localhost:3000 \
+#MONGO_URL=mongodb://localhost:27017/rocketchat \
+#MONGO_OPLOG_URL=mongodb://localhost:27017/local \
+#node main.js
